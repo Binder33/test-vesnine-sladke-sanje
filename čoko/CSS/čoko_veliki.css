@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.container {
+  width: 100%;
+  margin: auto;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: orange;
+  z-index: 100;
+  margin: 0;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+}
+.logo {
+  border-radius: 50px;
+  width: 70px;
+  margin-top: 4px;
+}
+.center {
+  display: flex;
+  position: relative;
+  align-content: center;
+}
+.text {
+  font-family: monotype corsiva, Arial;
+  margin-right: 25px;
+  font-weight: 700;
+  position: relative;
+  list-style:none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+}
+.text a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+.text::after {
+  position: absolute;
+  background: white;
+  content:'';
+  height: 3px;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+  width: 0;
+}
+.text:hover::after {
+  width: 100%;
+}
+    a {
+      text-decoration: none;
+    }
+    .d1 {
+      display: inline-flex;
+      margin-top: 100px;
+      align-items: center;
+      color: black;
+      margin-left: 30px;
+    }
+    .d2 {
+      font-size: 30px;
+      margin-right: 10px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: orange;
+    }
+    .d3 {
+      font-size: 20px;
+      font-family: Roboto, Arial;
+    }
+    .d1:hover {
+      opacity: 0.4;
+      transition: 0.5s;
+    }
+    .d1:hover::after {
+      opacity: 1;
+      transition: 0.5s;
+    }
+    .veliki-box {
+    display: flex;
+    margin-left: 200px; 
+    margin-top: 20px;
+    }
+    .veliki-img {
+      margin-right: 50px;
+      max-width: 450px;
+      min-width: 450px;
+    }
+    .veliki {
+    width: 450px;
+    border-radius: 20px;
+    width: 100%;
+    }
+    .veliki-text {
+      margin-top: 0;
+      margin-right: 150px;
+    }
+    .opis-piškotov {
+      line-height: 25px;
+      font-size: 20px;
+      font-family: Roboto, Arial;
+      margin-bottom: 60px;
+      margin-top: 10px;
+    }
+    .prvi-opis {
+      margin-bottom: 15px;
+    }
+    h2 {
+      font-size: 30px;
+      font-family: MV boli, Arial;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .veliki-opis {
+      font-size: 20px;
+      font-family: Roboto, Arial;
+      margin-top: 20px;
+      line-height: 30px;
+    }
+    .veliki-cena {
+      font-size: 20px;
+      font-family: Roboto, Arial;
+      margin-top: 20px;
+      margin-bottom: 60px;
+    }
+    @media (max-width: 1000px) {
+      .veliki-box {
+        margin-left: 0;
+      }
+    }
+    @media (max-width: 800px) {
+      .veliki-box {
+          flex-direction: column;
+      }
+  }
+  @media (max-width: 800px) {
+    .veliki-img {
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 1200px) {
+    .veliki-text {
+      margin: 0;
+    }
+  }
+  @media (max-width: 540px) {
+    .text {
+      font-size: 15px;
+    }
+  }
+  @media (max-width: 540px) {
+    .top {
+      padding: 5px 0px;
+    }
+  }
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 25px;
+    }
+  }
+  @media (max-width: 800px) {
+    .veliki-cena {
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 540px) {
+    .logo {
+      width: 60px;
+    }
+  }
+  @media (max-width: 540px) {
+    .veliki-box {
+      width: 100%;
+    }
+  }

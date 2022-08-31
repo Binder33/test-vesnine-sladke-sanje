@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    padding-bottom: 2000px;
+  }
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: orange;
+    z-index: 100;
+    margin: 0;
+  }
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+  }
+  .logo {
+    border-radius: 50px;
+    width: 70px;
+    margin-top: 4px;
+  }
+  .center {
+    display: flex;
+    position: relative;
+    align-content: center;
+  }
+  .text {
+    font-family: monotype corsiva, Arial;
+    margin-right: 25px;
+    font-weight: 700;
+    position: relative;
+    list-style:none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+  }
+  .text a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+  }
+  .text::after {
+    position: absolute;
+    background: white;
+    content:'';
+    height: 3px;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+    width: 0;
+  }
+  .text:hover::after {
+    width: 100%;
+  }
+  .naslov{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    font-family: MV boli, Arial;
+    font-weight: bold;
+  }
+  .prvi-box {
+    display: flex;
+    margin-top: 50px;
+    padding: 0px 50px;
+    justify-content: space-between;
+  }
+  .lešnik-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+  }
+  .lešnik-naslov {
+    font-family: MV boli, Arial;
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  .lešnik-img:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+  .lešnik {
+    width: 600px;
+    border-radius: 20px;
+  }
+  .čoko-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+  }
+  .čoko-naslov {
+    font-family: MV boli, Arial;
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  .čoko-img:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+  .čoko {
+    width: 600px;
+    border-radius: 20px;
+  }
+  .drugi-box {
+    display: flex;
+    margin-top: 30px;
+    padding: 0px 50px;
+    justify-content: space-between;
+  }
+  .pehtran-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+  }
+  .pehtran-naslov {
+    font-family: MV boli, Arial;
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  .pehtran-img:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+  .pehtran {
+    width: 600px;
+    border-radius: 20px;
+  }
+  @media (max-width: 540px) {
+    .text {
+      font-size: 13px;
+    }
+  }
+  @media (max-width: 540px) {
+    .logo {
+      width: 60px;
+    }
+  }
+  @media (max-width: 540px) {
+    .top {
+      padding: 5px 0px;
+    }
+  }
+  @media (max-width: 1317px) {
+    .prvi-box {
+      flex-direction: column;
+      padding: 0px;
+    }
+  }
+  @media (max-width: 1317px) {
+    .čoko-box {
+      margin-top: 20px;
+    }
+  }
+  @media (max-width: 1317px) {
+    .naslov {
+      font-size: 25px;
+    }
+  }
+  @media (max-width: 1317px) {
+    .čoko-naslov {
+      margin-bottom: 0px;
+    }
+  }
+  @media (max-width: 1317px) {
+    .lešnik-naslov {
+      margin-bottom: 0px;
+    }
+  }
+  @media (max-width: 1317px) {
+    .lešnik {
+      width: 100%;
+    }
+  }
+  @media (max-width: 1317px) {
+    .čoko {
+      width: 100%;
+    }
+  }
+  @media (max-width: 1317px) {
+    .pehtran {
+      width: 100%;
+    }
+  }
+  @media (max-width: 540px) {
+    .lešnik-naslov {
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 540px) {
+    .čoko-naslov {
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 540px) {
+    .pehtran-naslov {
+      font-size: 20px;
+    }
+  }
+  
+  
+  
+  

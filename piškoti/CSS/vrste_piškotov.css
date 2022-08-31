@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: orange;
+    z-index: 100;
+    margin: 0;
+  }
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+  }
+  .logo {
+    border-radius: 50px;
+    width: 70px;
+    margin-top: 4px;
+  }
+  .center {
+    display: flex;
+    position: relative;
+    align-content: center;
+  }
+  .text {
+    font-family: monotype corsiva, Arial;
+    margin-right: 25px;
+    font-weight: 700;
+    position: relative;
+    list-style:none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+  }
+  .text a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+  }
+  .text::after {
+    position: absolute;
+    background: white;
+    content:'';
+    height: 3px;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+    width: 0;
+  }
+  .text:hover::after {
+    width: 100%;
+  }
+  .naslov-box {
+    margin-top: 100px;
+  }
+  .naslov {
+    font-size: 30px;
+    font-family: MV boli, Arial;
+    font-weight: bold;
+  }
+  .shop {
+    margin-top: 30px;
+    color: black;
+    position: relative;
+  }
+  .lešnikovi_div {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: black;
+    font-family: MV boli, Arial;
+    margin-bottom: 15px;
+  }
+  .lešnikovi {
+    margin: 0;
+  }
+  /*Lešnik content*/
+  .lešnik-content {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  .lešnik-box {
+    position: relative;
+  }
+  .lešnik-box:hover {
+    padding: 10px;
+    opacity: 0.8;
+    transition: 0.4s;
+  }
+  .lešnik-img{
+    width: 100%;
+  }
+  .lešnik-title {
+    font-family: MV boli, arial;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .price{
+    font-size: 18px;
+    font-family: roboto, Arial;
+    font-weight: 500;
+  }
